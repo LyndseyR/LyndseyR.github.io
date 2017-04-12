@@ -1,0 +1,99 @@
+@import "partials/variables";
+
+body {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+h1, h2, h3, a {
+font-family: 'Montserrat', sans-serif;
+margin:5px 0;
+}
+
+h1 {
+  font-size:4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  font-family: 'Crimson Text', serif;
+}
+
+h4 {
+  font-size: .8rem;
+}
+
+h5 {
+  text-transform:uppercase;
+}
+
+h6 {
+  text-transform:uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, .5),
+      rgba(0, 0, 0, .9)
+      ),
+    url("../images/books.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  hr {
+    background: $shade;
+    color: $shade;
+    height: 5px;
+    border:none;
+  }
+  h1, h2, p {
+    color: $shade;
+  }
+  p{
+    font-size: 2rem;
+  }
+}
+
+.hero-content {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  margin:0 25px;
+  ul {
+    padding-top: 10px;
+    li{
+      display: inline-block;
+      a {
+        padding: 15px;
+        text-decoration: none;
+        color:$shade;
+      }
+    }
+  }
+}
