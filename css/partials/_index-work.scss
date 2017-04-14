@@ -1,0 +1,70 @@
+.work {
+  height: 300px;
+  width: 33.3333%;
+  float: left;
+  position:relative;
+}
+
+.home-page-content {
+  display: none;
+  padding-left: 15px;
+  position: absolute;
+  top: 15%;
+  .title {
+    color:$shade;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    vertical-align: baseline;
+    margin-bottom: 0;
+  }
+  p{
+    margin-top: 0;
+    color: $shade;
+  }
+}
+.gr:hover, .hp:hover{
+  .home-page-content {
+    display: block;
+  }
+}
+
+.gr, .hp {
+  background-position: center;
+  object-fit: cover;
+  transition: all .5s ease;
+}
+
+.gr {
+  background-image: url("../images/home-page-gr.jpg");
+}
+.gr:hover {
+  background:
+    linear-gradient(
+      rgba(93,172,189, 0.45),
+      rgba(93,172,189, 0.45)
+    ),
+    url("../images/home-page-gr.jpg");
+}
+
+.hp {
+  background-image: url("../images/home-page-hp.jpg");
+}
+.hp:hover {
+  background:
+    linear-gradient(
+      rgba(93,172,189, 0.45),
+      rgba(93,172,189, 0.45)
+    ),
+    url("../images/home-page-hp.jpg");
+    background-position: right;
+}
+
+.saving-grace {
+  background-color: $secondary;
+}
+.harry-potter {
+  background-color:$tint;
+}
+.goodreads {
+  background-color:$accent;
+}
