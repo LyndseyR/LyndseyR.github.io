@@ -1,5 +1,6 @@
 button {
   padding: 0 30px;
+  margin-left: 35px;
   color: #E0EBEB;
   text-align: center;
   font-size: 11px;
@@ -28,9 +29,6 @@ ul a {
   padding: 15px;
   margin: 5px; }
 
-img {
-  max-height: 100%; }
-
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../images/books.jpg");
   background-repeat: no-repeat;
@@ -51,6 +49,7 @@ img {
   .hero-content h1, .hero-content h2, .hero-content p {
     color: #E0EBEB; }
   .hero-content h1 {
+    font-weight: 300;
     padding-bottom: 10px; }
   .hero-content h2 {
     padding: 10px 0;
@@ -61,7 +60,7 @@ img {
     margin-top: 5px;
     font-size: 1.25rem; }
 
-nav {
+.home-nav {
   position: absolute;
   width: 100%;
   height: 50px;
@@ -71,14 +70,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   transition: all .5s; }
-  nav button {
-    margin-left: 35px; }
-  nav ul {
+  .home-nav ul {
     padding: 10px 35px 0 0; }
-    nav ul li {
+    .home-nav ul li {
       display: inline-block;
       padding: 5px; }
-      nav ul li a {
+      .home-nav ul li a {
         margin: 10px;
         padding: 0;
         text-decoration: none;
@@ -90,7 +87,7 @@ nav {
         padding-bottom: 3px;
         overflow: hidden;
         position: relative; }
-      nav ul li a:after {
+      .home-nav ul li a:after {
         content: '';
         position: absolute;
         display: block;
@@ -99,28 +96,80 @@ nav {
         left: -150%;
         background: #E0EBEB;
         transition: all .5s ease; }
-      nav ul li a:hover:after {
+      .home-nav ul li a:hover:after {
         left: 0;
         background: #E0EBEB; }
 
+.inside-nav {
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  transition: all .5s; }
+  .inside-nav button {
+    border-color: #24527A; }
+    .inside-nav button a {
+      color: #24527A; }
+  .inside-nav button:hover {
+    background: #24527A; }
+    .inside-nav button:hover a {
+      color: #E0EBEB; }
+  .inside-nav ul {
+    padding: 10px 35px 0 0; }
+    .inside-nav ul li {
+      display: inline-block;
+      padding: 5px; }
+      .inside-nav ul li a {
+        margin: 10px;
+        padding: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .9rem;
+        color: #24527A;
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 3px;
+        overflow: hidden;
+        position: relative; }
+      .inside-nav ul li a:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 3px;
+        width: 100%;
+        left: -150%;
+        background: #24527A;
+        transition: all .5s ease; }
+      .inside-nav ul li a:hover:after {
+        left: 0;
+        background: #24527A; }
+
 .fixed {
+  width: 100%;
   position: fixed;
   bottom: auto;
   z-index: 100;
   top: 0;
   left: 0;
-  background: rgba(244, 235, 235, 0.9); }
-  .fixed a {
-    color: #24527A; }
+  background: #fff; }
   .fixed button {
     border-color: #24527A; }
+    .fixed button a {
+      color: #24527A; }
   .fixed button:hover {
     background: #24527A; }
     .fixed button:hover a {
       color: #E0EBEB; }
-  .fixed a:after {
+  .fixed ul li a {
+    color: #24527A; }
+  .fixed ul li a:after {
     background: #24527A; }
-  .fixed a:hover:after {
+  .fixed ul li a:hover:after {
     background: #24527A; }
 
 .work {
@@ -144,10 +193,10 @@ nav {
     margin-top: 0;
     color: #E0EBEB; }
 
-.gr:hover .home-page-content, .hp:hover .home-page-content {
+.gr:hover .home-page-content, .hp:hover .home-page-content, .sg:hover .home-page-content {
   display: block; }
 
-.gr, .hp {
+.gr, .hp, .sg {
   background-position: center;
   object-fit: cover;
   transition: all .5s ease; }
@@ -156,17 +205,21 @@ nav {
   background-image: url("../images/home-page-gr.jpg"); }
 
 .gr:hover {
-  background: linear-gradient(rgba(93, 172, 189, 0.45), rgba(93, 172, 189, 0.45)), url("../images/home-page-gr.jpg"); }
+  background: linear-gradient(rgba(93, 172, 189, 0.7), #5dacbd), url("../images/home-page-gr.jpg"); }
 
 .hp {
   background-image: url("../images/home-page-hp.jpg"); }
 
 .hp:hover {
-  background: linear-gradient(rgba(93, 172, 189, 0.45), rgba(93, 172, 189, 0.45)), url("../images/home-page-hp.jpg");
-  background-position: right; }
+  background: linear-gradient(rgba(93, 172, 189, 0.7), #5dacbd), url("../images/home-page-hp.jpg");
+  background-position: top right; }
 
-.saving-grace {
-  background-color: #24527A; }
+.sg {
+  background-image: url("../images/home-page-sg.jpg"); }
+
+.sg:hover {
+  background: linear-gradient(rgba(93, 172, 189, 0.7), #5dacbd), url("../images/home-page-sg.jpg");
+  background-position: 10% 75%; }
 
 .harry-potter {
   background-color: #A7BCB9; }
@@ -174,12 +227,94 @@ nav {
 .goodreads {
   background-color: #FAC55B; }
 
+.mainbody-work {
+  max-width: 920px;
+  margin: 60px auto 0;
+  padding: 10px; }
+
+.project-goal {
+  text-align: center; }
+  .project-goal h2 {
+    font-weight: 700;
+    font-size: 2rem; }
+  .project-goal p {
+    font-size: 1.25rem; }
+  .project-goal img {
+    max-width: 70%; }
+
+.tools, .about, .weak, .opp {
+  box-sizing: border-box;
+  padding: 10px; }
+  .tools p, .about p, .weak p, .opp p {
+    margin: 5px 0; }
+  .tools ul, .about ul, .weak ul, .opp ul {
+    margin: 10px 0; }
+
+.about {
+  overflow: hidden; }
+
+.weak {
+  width: 50%;
+  float: left; }
+
+.opp {
+  width: 50%;
+  float: left; }
+
+.redesign-goal {
+  clear: both; }
+
+.sketches img {
+  width: 31%; }
+
+.mockups {
+  overflow: hidden; }
+  .mockups .mockup-content, .mockups img {
+    width: 46%;
+    float: left;
+    margin: 1% 2%; }
+    .mockups .mockup-content p, .mockups img p {
+      margin-bottom: 0; }
+
+.final img {
+  object-fit: cover;
+  float: left; }
+.final .desktop img {
+  width: 46%;
+  margin: 1% 1% 1% 2%; }
+.final .mobile {
+  overflow: hidden; }
+  .final .mobile img {
+    float: left;
+    width: 45%;
+    margin: 2%; }
+
+.final h2 {
+  margin: 1% 2%; }
+.final .tablet {
+  overflow: hidden;
+  clear: both;
+  margin-top: 15px; }
+  .final .tablet img {
+    width: 46%;
+    float: left;
+    margin: 1% 2%; }
+
+.ss-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1%; }
+  .ss-row img {
+    margin: 5px;
+    max-width: 46%; }
+
 body {
   font-family: 'Crimson Text', serif;
   font-size: 16px;
   line-height: 1.4; }
 
-h1, h2, h3, title {
+h1, h2, h3, title, footer {
   font-family: 'Montserrat', sans-serif;
   margin: 5px 0; }
 
@@ -206,13 +341,79 @@ h5 {
 h6 {
   text-transform: uppercase; }
 
-.largebody {
-  height: 900px;
-  background: orange; }
+.mainbody-work a {
+  text-decoration: none;
+  color: #333; }
+.mainbody-work a:hover {
+  text-decoration: underline; }
+.mainbody-work img {
+  max-height: 100%; }
+
+footer {
+  clear: both;
+  background-color: #24527A;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer p {
+    color: white;
+    text-align: center; }
+  footer .name {
+    font-size: .8rem;
+    font-weight: 300; }
 
 .clearfix {
   content: "";
   clear: both;
   display: block; }
+
+@media (max-width: 768px) {
+  .hero .hero-content {
+    width: 80%; }
+
+  .mockups .mockup-content, .mockups img {
+    width: 80%;
+    float: none;
+    display: block;
+    margin: 1% auto; }
+    .mockups .mockup-content p, .mockups img p {
+      margin-bottom: 15px; }
+
+  .final h2 {
+    margin: 1% 2%; }
+  .final .desktop img {
+    float: none;
+    display: block;
+    border: 1px solid black;
+    width: 80%;
+    margin: 1% auto; }
+  .final .mobile {
+    clear: both;
+    margin: 1% auto;
+    width: 80%; }
+    .final .mobile img {
+      float: left;
+      width: 46%; }
+
+  .final .tablet {
+    margin-top: 0; }
+    .final .tablet img {
+      width: 80%;
+      float: none;
+      margin: 1% auto;
+      display: block; } }
+@media (max-width: 500px) {
+  .weak, .opp {
+    padding: 5px 0; }
+    .weak ul, .opp ul {
+      margin: 5px 0;
+      padding-left: 30px; }
+
+  .weak {
+    width: 100%; }
+
+  .opp {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

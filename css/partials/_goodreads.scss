@@ -1,0 +1,113 @@
+.mainbody-work {
+  max-width: 920px;
+  margin: 60px auto 0;
+  padding: 10px;
+}
+
+.project-goal {
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  img {
+    max-width: 70%;
+  }
+}
+
+.tools, .about, .weak, .opp {
+  box-sizing: border-box;
+  padding: 10px;
+  p {
+    margin: 5px 0;
+  }
+  ul {
+    margin: 10px 0;
+  }
+}
+
+.about {
+  overflow: hidden;
+}
+.weak{
+  width: 50%;
+  float: left;
+}
+.opp {
+  width: 50%;
+  float:left;
+}
+
+.redesign-goal {
+  clear:both;
+}
+
+.sketches {
+  img {
+    width: 31%;
+  }
+}
+
+.mockups {
+  overflow: hidden;
+  .mockup-content, img {
+    width: 46%;
+    float: left;
+    margin: 1% 2%;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.final {
+  img {
+    object-fit: cover;
+    float: left;
+  }
+  .desktop {
+    img {
+      width: 46%;
+      margin: 1% 1% 1% 2%;
+    }
+  }
+  .mobile {
+    overflow: hidden;
+    img {
+      float: left;
+      width: 45%;
+      margin: 2%;
+    }
+  }
+}
+
+.final {
+  h2 {
+    margin: 1% 2%;
+  }
+  .tablet {
+    overflow: hidden;
+    clear:both;
+    margin-top: 15px;
+    img {
+      width: 46%;
+      float: left;
+      margin:1% 2%;
+    }
+  }
+}
+
+.ss-row {
+  display: flex;
+  justify-content: space-between;;
+  align-items: flex-start;
+  // flex-wrap: wrap;
+  margin: 1%;
+  img {
+    margin: 5px;
+    max-width:46%;
+  }
+}

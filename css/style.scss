@@ -1,6 +1,7 @@
 @import "partials/variables";
 @import "partials/nav";
 @import "partials/index-work";
+@import "partials/goodreads";
 
 body {
   font-family: 'Crimson Text', serif;
@@ -8,7 +9,7 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, h3, title {
+h1, h2, h3, title, footer {
 font-family: 'Montserrat', sans-serif;
 margin:5px 0;
 }
@@ -43,9 +44,34 @@ h6 {
   text-transform:uppercase;
 }
 
-.largebody {
-  height: 900px;
-  background:orange;
+.mainbody-work {
+  a {
+  text-decoration: none;
+  color: #333;
+  }
+  a:hover {
+    text-decoration:underline;
+  }
+  img {
+    max-height: 100%;
+  }
+}
+
+footer {
+  clear: both;
+  background-color: $secondary;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+    text-align: center;
+  }
+  .name {
+    font-size: .8rem;
+    font-weight: 300;
+  }
 }
 
 .clearfix {
@@ -53,3 +79,5 @@ h6 {
   clear:both;
   display:block;
 }
+
+@import "partials/media";

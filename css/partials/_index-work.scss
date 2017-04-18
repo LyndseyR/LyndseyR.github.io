@@ -22,13 +22,13 @@
     color: $shade;
   }
 }
-.gr:hover, .hp:hover{
+.gr:hover, .hp:hover, .sg:hover {
   .home-page-content {
     display: block;
   }
 }
 
-.gr, .hp {
+.gr, .hp, .sg {
   background-position: center;
   object-fit: cover;
   transition: all .5s ease;
@@ -40,8 +40,8 @@
 .gr:hover {
   background:
     linear-gradient(
-      rgba(93,172,189, 0.45),
-      rgba(93,172,189, 0.45)
+      rgba(93,172,189, .7),
+      rgba(93,172,189, 1)
     ),
     url("../images/home-page-gr.jpg");
 }
@@ -52,16 +52,26 @@
 .hp:hover {
   background:
     linear-gradient(
-      rgba(93,172,189, 0.45),
-      rgba(93,172,189, 0.45)
+      rgba(93,172,189, .7),
+      rgba(93,172,189, 1)
     ),
     url("../images/home-page-hp.jpg");
-    background-position: right;
+    background-position: top right;
 }
 
-.saving-grace {
-  background-color: $secondary;
+.sg {
+  background-image: url("../images/home-page-sg.jpg");
 }
+.sg:hover {
+  background:
+  linear-gradient(
+    rgba(93,172,189, .7),
+    rgba(93,172,189, 1)
+  ),
+  url("../images/home-page-sg.jpg");
+  background-position: 10% 75%;
+}
+
 .harry-potter {
   background-color:$tint;
 }

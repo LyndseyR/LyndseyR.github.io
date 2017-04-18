@@ -1,7 +1,7 @@
 // Menu to become fixed after hero image
+var navPos;
 $(document).ready(function(){
-  var $navBar = $('nav');
-  var navPos = $navBar.offset().top+0;
+  navPos = $('nav').offset().top;
 
   $(document).scroll (function(){
     var scroll = $(this).scrollTop();
@@ -12,3 +12,7 @@ $(document).ready(function(){
     }
   });
 });
+
+$(window).resize(function(){
+  navPos = $('nav').offset().top;
+})

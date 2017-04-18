@@ -1,5 +1,6 @@
 button{
 padding: 0 30px;
+margin-left:35px;
 color: $shade;
 text-align: center;
 font-size: 11px;
@@ -32,10 +33,6 @@ ul a {
   margin: 5px;
 }
 
-img {
-  max-height: 100%;
-}
-
 .hero {
   background:
     linear-gradient(
@@ -60,26 +57,27 @@ img {
   text-align: center;
   height: 100vh;
 
-    h1, h2, p {
-      color: $shade;
-    }
-    h1 {
-      padding-bottom: 10px;
-    }
-    h2 {
-      padding: 10px 0;
-      border-top: 2px solid $shade;
-      border-bottom: 2px solid $shade;
-    }
-    .tagline {
-      padding-top:10px;
-      margin-top: 5px;
-      font-size: 1.25rem;
-    }
+  h1, h2, p {
+    color: $shade;
+  }
+  h1 {
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+  h2 {
+    padding: 10px 0;
+    border-top: 2px solid $shade;
+    border-bottom: 2px solid $shade;
+  }
+  .tagline {
+    padding-top:10px;
+    margin-top: 5px;
+    font-size: 1.25rem;
+  }
 }
 
 
-nav {
+.home-nav {
   position:absolute;
   width: 100%;
   height:50px;
@@ -89,9 +87,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   transition: all .5s;
-  button {
-    margin-left: 35px;
-  }
+
   ul {
     padding: 10px 35px 0 0;
     li{
@@ -128,18 +124,23 @@ nav {
   }
 }
 
-.fixed {
-  position: fixed;
-  bottom:auto;
-  z-index:100;
-  top:0;
-  left:0;
-  background: rgba(244,235,235,.9);
-  a {
-    color: $secondary;
-  }
+.inside-nav {
+  padding: 5px;
+  height:50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position:fixed;
+  top: 0;
+  transition: all .5s;
+
   button {
     border-color: $secondary;
+    a{
+      color:$secondary;
+    }
   }
   button:hover{
     background: $secondary;
@@ -147,10 +148,74 @@ nav {
       color:$shade;
     }
   }
-  a:after {
-    background: $secondary;
+
+  ul {
+    padding: 10px 35px 0 0;
+    li{
+      display: inline-block;
+      padding:5px;
+      a {
+        margin: 10px;
+        padding: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .9rem;
+        color: $secondary;
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 3px;
+        overflow:hidden;
+        position:relative;
+      }
+      a:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 3px;
+        width: 100%;
+        left: -150%;
+        background: $secondary;
+        transition: all .5s ease;
+      }
+      a:hover:after {
+        left: 0;
+        background: $secondary;
+      }
+    }
   }
-  a:hover:after {
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  bottom:auto;
+  z-index:100;
+  top:0;
+  left:0;
+  background: #fff;
+  button {
+    border-color: $secondary;
+    a{
+      color:$secondary;
+    }
+  }
+  button:hover{
     background: $secondary;
+    a{
+      color:$shade;
+    }
+  }
+  ul {
+    li {
+      a {
+        color: $secondary;
+      }
+      a:after {
+        background: $secondary;
+      }
+      a:hover:after {
+        background: $secondary;
+      }
+    }
   }
 }
