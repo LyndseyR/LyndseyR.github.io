@@ -1,0 +1,28 @@
+.whiteboard {
+  img {
+    width: 49%;
+    float: left;
+  }
+  img:nth-of-type(1){
+    margin-right: 2%;
+  }
+}
+
+.end-result {
+  clear:both;
+  // padding-top: 25px;
+}
+
+.sg-desktop, .sg-mobile {
+  margin-bottom: 15px;
+}
+
+.sg-desktop {
+  width: 60%;
+  float: left;
+  margin-right: 10%;
+}
+.sg-mobile {
+  width: 30%;
+  float: left;
+}

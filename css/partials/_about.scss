@@ -1,0 +1,21 @@
+.about-highlights {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  hr {
+    margin-top: 15px;
+  }
+  img {
+    width: 40%;
+    margin-right: 25px;
+  }
+}
+
+.about-me {
+  h2 {
+    padding-top: 25px;
+  }
+}

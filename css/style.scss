@@ -1,12 +1,15 @@
 @import "partials/variables";
 @import "partials/nav";
-@import "partials/index-work";
+@import "partials/index";
+@import "partials/global-work";
 @import "partials/goodreads";
+@import "partials/savinggrace";
+@import "partials/about";
 
 body {
   font-family: 'Crimson Text', serif;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 h1, h2, h3, title, footer {
@@ -44,17 +47,42 @@ h6 {
   text-transform:uppercase;
 }
 
-.mainbody-work {
+.mainbody-work, .inside-mobile-nav {
+
   a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: $secondary;
+    font-weight: 300;
+    display: inline-block;
+    padding-bottom: 2px;
+    overflow:hidden;
+    position:relative;
+    top: 10px;
   }
-  a:hover {
-    text-decoration:underline;
+  a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    left: -150%;
+    background: $secondary;
+    transition: all .5s ease;
   }
+  a:hover:after {
+    left: 0;
+    background: $secondary;
+  }
+
   img {
     max-width: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
   }
+}
+
+#multiple-devices, #logo {
+  border:none;
 }
 
 footer {
@@ -68,9 +96,6 @@ footer {
     font-size: 1.25rem;
     color: $shade;
   }
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   p {
     color: white;
     text-align: center;

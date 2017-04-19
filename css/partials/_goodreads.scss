@@ -1,50 +1,3 @@
-.mainbody-work {
-  max-width: 920px;
-  margin: 60px auto 0;
-  padding: 10px;
-}
-
-.project-goal {
-  text-align: center;
-  h2 {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.25rem;
-  }
-  img {
-    max-width: 70%;
-  }
-}
-
-.tools, .about, .weak, .opp {
-  box-sizing: border-box;
-  padding: 10px;
-  p {
-    margin: 5px 0;
-  }
-  ul {
-    margin: 10px 0;
-  }
-}
-
-.about {
-  overflow: hidden;
-}
-.weak{
-  width: 50%;
-  float: left;
-}
-.opp {
-  width: 50%;
-  float:left;
-}
-
-.redesign-goal {
-  clear:both;
-}
-
 .sketches {
   img {
     width: 31%;
@@ -110,32 +63,4 @@
     margin: 5px;
     max-width:46%;
   }
-}
-
-// img {
-//   max-width: 100%;
-// }
-
-.whiteboard {
-  img {
-    width: 49%;
-    float: left;
-  }
-  img:nth-of-type(1){
-    margin-right: 2%;
-  }
-}
-
-.sg-desktop, .sg-mobile {
-  margin-bottom: 15px;
-}
-
-.sg-desktop {
-  width: 60%;
-  float: left;
-  margin-right: 10%;
-}
-.sg-mobile {
-  width: 30%;
-  float: left;
 }

@@ -1,0 +1,56 @@
+.mainbody-work {
+  max-width: 920px;
+  margin: 105px auto 0;
+  padding: 10px;
+
+  h2 {
+    padding-top: 25px;
+  }
+
+  hr {
+    margin: 0;
+  }
+}
+
+.project-goal {
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0;
+    line-height: 1;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  img {
+    max-width: 70%;
+  }
+}
+
+.tools, .about, .weak, .opp {
+  box-sizing: border-box;
+  padding: 10px;
+  p {
+    margin: 5px 0;
+  }
+  ul {
+    margin: 10px 0;
+  }
+}
+
+.about {
+  overflow: hidden;
+}
+.weak{
+  width: 50%;
+  float: left;
+}
+.opp {
+  width: 50%;
+  float:left;
+}
+
+.redesign-goal {
+  clear:both;
+}

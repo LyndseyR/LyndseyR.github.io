@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyndsey Mitchel Work</title>
+    <script src="https://use.fontawesome.com/f2bdd0ae67.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,11 +14,24 @@
 
     <header>
       <nav class="inside-nav">
-        <button><a href="#">Resume</a></button>
+        <div class="logo-fixed"><a href="index.html">
+          <img src="images/LM-logo.png" alt="Logo">
+          <h2 class="header-name">Lyndsey Mitchel</h2></a>
+        </div>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><button><a href="about.html">About</a></button></li>
+          <li><button><a href="index.html">Work</a></button></li>
+          <li><button><a href="mailto:lroka07@gmail.com">Email Me</a></button></li>
+        </ul>
+      </nav>
+      <nav class="inside-mobile-nav">
+        <a href="index.html"><img src="images/LM-logo.png" alt="Logo" id="logo"></a>
+        <button class="hamburger">&#9776;</button>
+        <ul class="hamburger-menu">
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="mailto:lroka07@gmail.com">Email Me</a></li>
         </ul>
       </nav>
     </header>
@@ -25,14 +39,16 @@
     <section class="mainbody-work">
       <div class="project-goal">
         <h2>Saving Grace</h2>
-        <p>View Page &nbsp;|&nbsp; View Github Repo</p>
+        <div><a href="https://lyndseyr.github.io/sg-redesign/">Live Site</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/LyndseyR/sg-redesign">View Code</a></div>
         <p>At The Iron Yard we were given a group project to redesign a nonprofit site of our choosing. We all loved dogs and felt passionate in redesigning a dog shelter site. We had less then a week from the time we were given the prompt till presentation. With this short time crunch I've since gone back and updated the site. Below I explain what I've carried over from my group and what I've modified. </p>
-        <img src="images/sg/devices-sg.png" alt="Goodreads My Books Page Shown on all Devices">
+        <img id="multiple-devices" src="images/sg/devices-sg.png" alt="Goodreads My Books Page Shown on all Devices">
       </div>
+
       <div class="tools">
         <h2>Technology Used</h2>
         <p>&bull; AJAX &bull; Git Collaboration &bull; HTML &bull; jQuery &bull; Photoshop &bull; SASS
       </div>
+      <hr>
 
       <div class="about">
         <h2>About This Project</h2>
@@ -59,16 +75,20 @@
         </div>
         <p>With this being the first group project at The Iron Yard it challenged us to really communicate on our design process. We decided on our brand styles which included a bright color palatte that kept the playful feel of the site but was more professional then an overload of pink. We decided on the typeface, logo, and spent hours sketching on white boards to make sure everyone was on the same page before we dove into the code. My responsibilities were the navigation (header and footer) and the Volunteer and Adoption pages. Since the project has ended I've gone back and made changes that we weren't able to impliment on a short deadline. I've redone the home page making it more responsive and updated the padding and margins on the 'About Us' and 'Our Dogs' page. </p>
       </div>
+      <hr>
 
       <div class="redesign-goal">
         <h2>Goal of Redesign</h2>
         <p>We wanted to do several things, have a bigger call to action in donating, present the dogs in a cleaner way and condense the amount of content.</p>
       </div>
+      <hr>
+
       <div class="challenges">
         <h2>Challenges/Problems Solved</h2>
         <p>As you can see from the sketches below the original home page had the adoption, about the program and good dog section on a row. Then the spotlight, sign up form and another feature, matchmaker were flushed. When redesigning the page I wanted to condense the space even more so I combined these sections into a row. The matchmaker was a neat feature that if properly implimented would be a quiz resulting in matching you with a dog. We ran out of time to write the jQuery to make this functional.</p>
         <p>Another challenge I came too was when I thought I could lay out the adoption and volunteer page the same way using multiple columns. However I found that making the content flush looked a lot cleaner. </p>
       </div>
+      <hr>
 
       <div class="whiteboard">
         <h2>Whiteboard Sketches</h2>
@@ -76,7 +96,7 @@
         <img src="images/sg/whiteboard-pages.jpg" alt="Whiteboard Sketch of Inside Pages">
       </div>
 
-      <div>
+      <div class="end-result">
         <h2>End Result</h2>
         <div class="sg-desktop">
           <img src="images/sg/homepage.png" alt="Home Page Screenshot">
@@ -93,9 +113,16 @@
       </div>
     </section>
 
-    <footer><p>"Be who you are, and be it well" - Saint Francis de Sales</p></footer>
-
+    <footer>
+      <div class="icons">
+        <i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-envelope" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i><i class="fa fa-codepen" aria-hidden="true"></i>
+      </div>
+      <p>"Be who you are, and be it well" <span class="name"> - Saint Francis de Sales</span></p>
+      <p>Site coded by Lyndsey Mitchel, &copy; 2017, All Rights Reserved</p>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
+
   </body>
 </html>

@@ -1,6 +1,5 @@
-button{
-padding: 0 30px;
-margin-left:35px;
+button {
+padding: 0 15px;
 color: $shade;
 text-align: center;
 font-size: 11px;
@@ -20,17 +19,12 @@ box-sizing: border-box;
     text-decoration: none;
   }
 }
+
 button:hover {
   background:$shade;
-  a{
+  a {
     color:#333;
   }
-}
-
-ul a {
-  text-decoration: none;
-  padding: 15px;
-  margin: 5px;
 }
 
 .hero {
@@ -61,8 +55,8 @@ ul a {
     color: $shade;
   }
   h1 {
+    font-size: 4rem;
     font-weight: 300;
-    padding-bottom: 10px;
   }
   h2 {
     padding: 10px 0;
@@ -76,11 +70,20 @@ ul a {
   }
 }
 
+.logo-hero, .logo-fixed {
+  padding-left: 35px;
+  img {
+    // position: absolute;
+    // bottom: 15px;
+    height: 65px;
+    padding-right: 15px;
+  }
+}
 
 .home-nav {
   position:absolute;
   width: 100%;
-  height:50px;
+  height:100px;
   bottom:15px;
   left:0;
   display: flex;
@@ -88,104 +91,39 @@ ul a {
   align-items: center;
   transition: all .5s;
 
+  .logo-fixed {
+    display: none;
+  }
+
   ul {
-    padding: 10px 35px 0 0;
+    padding-right:35px;
     li{
       display: inline-block;
       padding:5px;
-      a {
-        margin: 10px;
-        padding: 0;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: .9rem;
-        color: $shade;
-        font-weight: 700;
-        display: inline-block;
-        padding-bottom: 3px;
-        overflow:hidden;
-        position:relative;
-      }
-      a:after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 3px;
-        width: 100%;
-        left: -150%;
-        background: $shade;
-        transition: all .5s ease;
-      }
-      a:hover:after {
-        left: 0;
-        background: $shade;
-      }
     }
   }
 }
 
 .inside-nav {
-  padding: 5px;
-  height:50px;
-  width: 100%;
+  height:100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
-  position:fixed;
-  top: 0;
   transition: all .5s;
 
-  button {
-    border-color: $secondary;
-    a{
-      color:$secondary;
-    }
-  }
-  button:hover{
-    background: $secondary;
-    a{
-      color:$shade;
-    }
-  }
-
   ul {
-    padding: 10px 35px 0 0;
-    li{
+    padding-right: 35px;
+    li {
       display: inline-block;
       padding:5px;
-      a {
-        margin: 10px;
-        padding: 0;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: .9rem;
-        color: $secondary;
-        font-weight: 700;
-        display: inline-block;
-        padding-bottom: 3px;
-        overflow:hidden;
-        position:relative;
-      }
-      a:after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 3px;
-        width: 100%;
-        left: -150%;
-        background: $secondary;
-        transition: all .5s ease;
-      }
-      a:hover:after {
-        left: 0;
-        background: $secondary;
+      a{
+        color:#333;
       }
     }
   }
 }
 
-.fixed {
+.fixed, .inside-nav{
   width: 100%;
   position: fixed;
   bottom:auto;
@@ -193,6 +131,24 @@ ul a {
   top:0;
   left:0;
   background: #fff;
+
+  .logo-hero{
+    display: none;
+  }
+
+  .logo-fixed {
+    position: relative;
+    padding-left: 35px;
+    display: block;
+    height: 65px;
+    width: 275px;
+    h2 {
+      position: absolute;
+      right:0px;
+      bottom: 10px;
+    }
+  }
+
   button {
     border-color: $secondary;
     a{
@@ -205,17 +161,52 @@ ul a {
       color:$shade;
     }
   }
+}
+
+.inside-mobile-nav {
+  display: none;
+  // width: 100vw;
+  padding: 15px 40px;
+  // position: fixed;
+
+  top:0;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  img {
+    height: 50px;
+  }
   ul {
-    li {
-      a {
-        color: $secondary;
-      }
-      a:after {
-        background: $secondary;
-      }
-      a:hover:after {
-        background: $secondary;
+    margin: 0;
+    li{
+      list-style-type: none;
+      height: 100%;
+      margin:0;
+      padding:0;
+      a{
+        display: block;
       }
     }
   }
+}
+
+.hamburger {
+  float: right;
+  top: 10px;
+  // margin-right: 50px;
+  position:relative;
+  color:$secondary;
+  border-color: $secondary;
+  outline:0;
+  font-size: 20px;
+}
+.hamburger:hover {
+  color:$shade;
+  background:$secondary;
+}
+.hamburger-menu {
+  display:none;
+  position: absolute;
+  right:30px;
+  top: 55px;
 }

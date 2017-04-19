@@ -8,7 +8,19 @@
     }
   }
 
-// Process of GoodReads Page
+  // Inside Mobile nav
+  .inside-nav {
+    display:none;
+  }
+  .inside-mobile-nav {
+    display: block;
+  }
+
+  .mainbody-work {
+    margin:0;
+    padding: 15px;
+  }
+  // Process of GoodReads Page
   .mockups {
     .mockup-content, img {
       width: 80%;
@@ -57,7 +69,7 @@
     }
   }
 
-  // Process of Saving Grace
+  // Process of work images Saving Grace
   .whiteboard {
     img {
       width: 80%;
@@ -72,6 +84,18 @@
   }
   .sg-mobile {
     display: none;
+  }
+
+  // About Me
+  .about-highlights{
+    img {
+      width: 80%;
+      display: block;
+    }
+    .tools {
+      border:1px solid blue;
+      width: 80%;
+    }
   }
 }
 
