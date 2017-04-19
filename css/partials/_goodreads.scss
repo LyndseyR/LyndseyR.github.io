@@ -111,3 +111,31 @@
     max-width:46%;
   }
 }
+
+// img {
+//   max-width: 100%;
+// }
+
+.whiteboard {
+  img {
+    width: 49%;
+    float: left;
+  }
+  img:nth-of-type(1){
+    margin-right: 2%;
+  }
+}
+
+.sg-desktop, .sg-mobile {
+  margin-bottom: 15px;
+}
+
+.sg-desktop {
+  width: 60%;
+  float: left;
+  margin-right: 10%;
+}
+.sg-mobile {
+  width: 30%;
+  float: left;
+}

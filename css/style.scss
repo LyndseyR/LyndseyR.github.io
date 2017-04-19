@@ -53,24 +53,30 @@ h6 {
     text-decoration:underline;
   }
   img {
-    max-height: 100%;
+    max-width: 100%;
   }
 }
 
 footer {
   clear: both;
   background-color: $secondary;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+  .fa {
+    padding-right: 15px;
+    font-size: 1.25rem;
+    color: $shade;
+  }
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   p {
     color: white;
     text-align: center;
-  }
-  .name {
     font-size: .8rem;
     font-weight: 300;
+    margin: 5px;
   }
 }
 

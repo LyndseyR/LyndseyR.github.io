@@ -1,12 +1,14 @@
 
 
 @media (max-width:768px) {
+  // Home Page
   .hero {
     .hero-content {
       width: 80%;
     }
   }
-  
+
+// Process of GoodReads Page
   .mockups {
     .mockup-content, img {
       width: 80%;
@@ -45,17 +47,31 @@
 
   .final {
     .tablet {
-      // overflow: hidden;
-      // clear:both;
       margin-top: 0;
       img {
         width: 80%;
         float: none;
         margin: 1% auto;
         display: block;
-        // margin:1% 2%;
       }
     }
+  }
+
+  // Process of Saving Grace
+  .whiteboard {
+    img {
+      width: 80%;
+      margin: 2% auto;
+      display: block;
+    }
+  }
+  .sg-desktop {
+    width: 80%;
+    float: none;
+    margin: 2% auto 0;
+  }
+  .sg-mobile {
+    display: none;
   }
 }
 
