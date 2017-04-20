@@ -12,29 +12,7 @@
   </head>
   <body>
 
-    <header>
-      <nav class="inside-nav">
-        <div class="logo-fixed"><a href="index.html">
-          <img src="images/LM-logo.png" alt="Logo">
-          <h2 class="header-name">Lyndsey Mitchel</h2></a>
-        </div>
-        <ul>
-          <li><button><a href="about.html">About</a></button></li>
-          <li><button><a href="index.html">Work</a></button></li>
-          <li><button><a href="mailto:lroka07@gmail.com">Email Me</a></button></li>
-        </ul>
-      </nav>
-      <nav class="inside-mobile-nav">
-        <a href="index.html"><img src="images/LM-logo.png" alt="Logo" id="logo"></a>
-        <button class="hamburger">&#9776;</button>
-        <ul class="hamburger-menu">
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="mailto:lroka07@gmail.com">Email Me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header></header>
 
     <section class="mainbody-work">
       <div class="project-goal">
@@ -113,16 +91,15 @@
       </div>
     </section>
 
-    <footer>
-      <div class="icons">
-        <i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-envelope" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i><i class="fa fa-codepen" aria-hidden="true"></i>
-      </div>
-      <p>"Be who you are, and be it well" <span class="name"> - Saint Francis de Sales</span></p>
-      <p>Site coded by Lyndsey Mitchel, &copy; 2017, All Rights Reserved</p>
-    </footer>
+    <footer></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/menu.js" type="text/javascript"></script>
+
+    <script>
+      $('header').load('includes/header.html');
+      $('footer').load('includes/footer.html');
+    </script>
 
   </body>
 </html>

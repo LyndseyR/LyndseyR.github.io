@@ -58,7 +58,6 @@ h6 {
     overflow:hidden;
     position:relative;
     top: 10px;
-    z-index: -10;
   }
   a:after {
     content: '';
@@ -85,6 +84,7 @@ h6 {
 #multiple-devices, #logo {
   border:none;
 }
+
 
 footer {
   clear: both;

@@ -1,5 +1,4 @@
 button {
-padding: 0 15px;
 color: $shade;
 text-align: center;
 font-size: 11px;
@@ -13,8 +12,10 @@ background-color: transparent;
 border-radius: 4px;
 border: 1px solid $shade;
 cursor: pointer;
+outline:$shade;
 box-sizing: border-box;
   a {
+    padding: 2px 15px;
     color:$shade;
     text-decoration: none;
   }
@@ -77,9 +78,8 @@ button:hover {
 
 .logo-hero, .logo-fixed {
   padding-left: 35px;
+
   img {
-    // position: absolute;
-    // bottom: 15px;
     height: 65px;
     padding-right: 15px;
   }
@@ -173,7 +173,7 @@ button:hover {
       color:$secondary;
     }
   }
-  button:hover{
+  button:hover {
     background: $secondary;
     a{
       color:$shade;
@@ -185,14 +185,9 @@ button:hover {
 
 .inside-mobile-nav {
   display: none;
-  // width: 100vw;
   padding: 15px 40px;
-  // position: fixed;
-
   top:0;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+
   img {
     height: 50px;
   }
@@ -204,6 +199,7 @@ button:hover {
       margin:0;
       padding:0;
       a{
+        font-family: 'Montserrat', sans-serif;
         display: block;
       }
     }
@@ -253,7 +249,8 @@ button:hover {
   a {
     color: $secondary;
     font-weight: 300;
-    padding: 2px 12px;
+    font-size: .9rem;
+    padding: 5px 12px;
     background:#fff;
   }
   a:hover {
