@@ -27,6 +27,8 @@ button:hover {
   }
 }
 
+// Home page hero image
+
 .hero {
   background:
     linear-gradient(
@@ -57,6 +59,7 @@ button:hover {
   h1 {
     font-size: 4rem;
     font-weight: 300;
+    line-height:1.2;
   }
   h2 {
     padding: 10px 0;
@@ -69,6 +72,8 @@ button:hover {
     font-size: 1.25rem;
   }
 }
+
+// Home page bottom menu and scroll menu
 
 .logo-hero, .logo-fixed {
   padding-left: 35px;
@@ -104,6 +109,8 @@ button:hover {
   }
 }
 
+// Inside page header
+
 .inside-nav {
   height:100px;
   display: flex;
@@ -117,6 +124,17 @@ button:hover {
       display: inline-block;
       padding:5px;
       a{
+        color:#333;
+      }
+    }
+  }
+}
+
+// Color of my name on left side nav is black
+.inside-nav {
+  .logo-fixed {
+    a{
+      h2{
         color:#333;
       }
     }
@@ -145,7 +163,7 @@ button:hover {
     h2 {
       position: absolute;
       right:0px;
-      bottom: 10px;
+      bottom: 0px;
     }
   }
 
@@ -162,6 +180,8 @@ button:hover {
     }
   }
 }
+
+// Mobile Navigation
 
 .inside-mobile-nav {
   display: none;
@@ -190,10 +210,30 @@ button:hover {
   }
 }
 
+.inside-mobile-nav {
+  position:fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background:#fff;
+
+  a {
+    text-decoration:none;
+
+    h2{
+      color:#333;
+      font-size: 1.2rem;
+      display:inline-block;
+      position: relative;
+      bottom: 10px;
+      margin-left:10px;
+    }
+  }
+}
+
 .hamburger {
   float: right;
   top: 10px;
-  // margin-right: 50px;
+  right:0;
   position:relative;
   color:$secondary;
   border-color: $secondary;
@@ -207,6 +247,18 @@ button:hover {
 .hamburger-menu {
   display:none;
   position: absolute;
-  right:30px;
-  top: 55px;
+  right:15px;
+  top: 70px;
+
+  a {
+    color: $secondary;
+    font-weight: 300;
+    padding: 2px 12px;
+    background:#fff;
+  }
+  a:hover {
+    background:$secondary;
+    color: $shade;
+    border-radius:4px;
+  }
 }

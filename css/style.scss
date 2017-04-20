@@ -47,7 +47,7 @@ h6 {
   text-transform:uppercase;
 }
 
-.mainbody-work, .inside-mobile-nav {
+.mainbody-work {
 
   a {
     text-decoration: none;
@@ -58,6 +58,7 @@ h6 {
     overflow:hidden;
     position:relative;
     top: 10px;
+    z-index: -10;
   }
   a:after {
     content: '';
@@ -96,6 +97,15 @@ footer {
     font-size: 1.25rem;
     color: $shade;
   }
+
+  .swirly:hover{
+    animation:swirl 1s;
+  }
+  @keyframes swirl {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+  }
+
   p {
     color: white;
     text-align: center;

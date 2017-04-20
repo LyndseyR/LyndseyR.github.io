@@ -1,14 +1,32 @@
 
 
 @media (max-width:768px) {
-  // Home Page
+  /////////////////////////////
+  //Home Page Hero ///////////
+  ///////////////////////////
   .hero {
     .hero-content {
-      width: 80%;
+      width: 90%;
+      h1{
+        font-size: 2.5rem;
+      }
+      h2 {
+        padding: 5px;
+        font-size:1.2rem;
+      }
+      .tagline {
+        font-size: 1.15rem;
+      }
     }
   }
+  .home-nav {
+    display:none;
+  }
 
-  // Inside Mobile nav
+  /////////////////////////////
+  /// Navigation for Mobile //
+  ///////////////////////////
+
   .inside-nav {
     display:none;
   }
@@ -16,13 +34,29 @@
     display: block;
   }
 
+  /////////////////////////////
+  //Home Page Work Containers/
+  ///////////////////////////
+  .work {
+    width: 50%;
+  }
+
   .mainbody-work {
-    margin:0;
+    // margin:0;
     padding: 15px;
   }
-  // Process of GoodReads Page
+
+  /////////////////////////////
+  //Good Read Page ///////////
+  ///////////////////////////
+
+  // Photoshop sketches screenshots
+
   .mockups {
-    .mockup-content, img {
+    .mockup-content {
+      width:100%;
+    }
+    img {
       width: 80%;
       float: none;
       display: block;
@@ -32,6 +66,8 @@
       }
     }
   }
+
+  // End result screenshots
 
   .final {
     h2 {
@@ -69,7 +105,9 @@
     }
   }
 
-  // Process of work images Saving Grace
+  /////////////////////////////
+  //Saving Grace Page ////////
+  ///////////////////////////
   .whiteboard {
     img {
       width: 80%;
@@ -86,20 +124,30 @@
     display: none;
   }
 
-  // About Me
+  /////////////////////////////
+  //About Me ///// ///////////
+  ///////////////////////////
+
   .about-highlights{
+    flex-flow: column;
+    width: 80%;
     img {
       width: 80%;
-      display: block;
-    }
-    .tools {
-      border:1px solid blue;
-      width: 80%;
+      margin: 0;
     }
   }
 }
 
 @media (max-width:500px) {
+
+  /////////////////////////////
+  //Home Page Work Containers/
+  ///////////////////////////
+
+  .work {
+    width: 100%;
+  }
+
   .weak, .opp {
     padding: 5px 0;
     ul {

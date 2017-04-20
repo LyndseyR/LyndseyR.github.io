@@ -44,7 +44,8 @@ button:hover {
     color: #E0EBEB; }
   .hero-content h1 {
     font-size: 4rem;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1.2; }
   .hero-content h2 {
     padding: 10px 0;
     border-top: 2px solid #E0EBEB;
@@ -92,6 +93,9 @@ button:hover {
       .inside-nav ul li a {
         color: #333; }
 
+.inside-nav .logo-fixed a h2 {
+  color: #333; }
+
 .fixed, .inside-nav {
   width: 100%;
   position: fixed;
@@ -111,7 +115,7 @@ button:hover {
     .fixed .logo-fixed h2, .inside-nav .logo-fixed h2 {
       position: absolute;
       right: 0px;
-      bottom: 10px; }
+      bottom: 0px; }
   .fixed button, .inside-nav button {
     border-color: #24527A; }
     .fixed button a, .inside-nav button a {
@@ -137,9 +141,25 @@ button:hover {
       .inside-mobile-nav ul li a {
         display: block; }
 
+.inside-mobile-nav {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff; }
+  .inside-mobile-nav a {
+    text-decoration: none; }
+    .inside-mobile-nav a h2 {
+      color: #333;
+      font-size: 1.2rem;
+      display: inline-block;
+      position: relative;
+      bottom: 10px;
+      margin-left: 10px; }
+
 .hamburger {
   float: right;
   top: 10px;
+  right: 0;
   position: relative;
   color: #24527A;
   border-color: #24527A;
@@ -153,8 +173,17 @@ button:hover {
 .hamburger-menu {
   display: none;
   position: absolute;
-  right: 30px;
-  top: 55px; }
+  right: 15px;
+  top: 70px; }
+  .hamburger-menu a {
+    color: #24527A;
+    font-weight: 300;
+    padding: 2px 12px;
+    background: #fff; }
+  .hamburger-menu a:hover {
+    background: #24527A;
+    color: #E0EBEB;
+    border-radius: 4px; }
 
 .work {
   height: 300px;
@@ -368,7 +397,7 @@ h5 {
 h6 {
   text-transform: uppercase; }
 
-.mainbody-work a, .inside-mobile-nav a {
+.mainbody-work a {
   text-decoration: none;
   color: #24527A;
   font-weight: 300;
@@ -376,8 +405,9 @@ h6 {
   padding-bottom: 2px;
   overflow: hidden;
   position: relative;
-  top: 10px; }
-.mainbody-work a:after, .inside-mobile-nav a:after {
+  top: 10px;
+  z-index: -10; }
+.mainbody-work a:after {
   content: '';
   position: absolute;
   display: block;
@@ -386,10 +416,10 @@ h6 {
   left: -150%;
   background: #24527A;
   transition: all .5s ease; }
-.mainbody-work a:hover:after, .inside-mobile-nav a:hover:after {
+.mainbody-work a:hover:after {
   left: 0;
   background: #24527A; }
-.mainbody-work img, .inside-mobile-nav img {
+.mainbody-work img {
   max-width: 100%;
   border: 1px solid #333;
   box-sizing: border-box; }
@@ -407,6 +437,13 @@ footer {
     padding-right: 15px;
     font-size: 1.25rem;
     color: #E0EBEB; }
+  footer .swirly:hover {
+    animation: swirl 1s; }
+@keyframes swirl {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
   footer p {
     color: white;
     text-align: center;
@@ -421,7 +458,17 @@ footer {
 
 @media (max-width: 768px) {
   .hero .hero-content {
-    width: 80%; }
+    width: 90%; }
+    .hero .hero-content h1 {
+      font-size: 2.5rem; }
+    .hero .hero-content h2 {
+      padding: 5px;
+      font-size: 1.2rem; }
+    .hero .hero-content .tagline {
+      font-size: 1.15rem; }
+
+  .home-nav {
+    display: none; }
 
   .inside-nav {
     display: none; }
@@ -429,16 +476,20 @@ footer {
   .inside-mobile-nav {
     display: block; }
 
+  .work {
+    width: 50%; }
+
   .mainbody-work {
-    margin: 0;
     padding: 15px; }
 
-  .mockups .mockup-content, .mockups img {
+  .mockups .mockup-content {
+    width: 100%; }
+  .mockups img {
     width: 80%;
     float: none;
     display: block;
     margin: 1% auto; }
-    .mockups .mockup-content p, .mockups img p {
+    .mockups img p {
       margin-bottom: 15px; }
 
   .final h2 {
@@ -478,13 +529,16 @@ footer {
   .sg-mobile {
     display: none; }
 
-  .about-highlights img {
-    width: 80%;
-    display: block; }
-  .about-highlights .tools {
-    border: 1px solid blue;
-    width: 80%; } }
+  .about-highlights {
+    flex-flow: column;
+    width: 80%; }
+    .about-highlights img {
+      width: 80%;
+      margin: 0; } }
 @media (max-width: 500px) {
+  .work {
+    width: 100%; }
+
   .weak, .opp {
     padding: 5px 0; }
     .weak ul, .opp ul {
