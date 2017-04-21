@@ -125,6 +125,24 @@
     display: none;
   }
 
+
+  /////////////////////////////
+  //Logo Creation Page ///////
+  ///////////////////////////
+
+  .logo-process {
+    flex-flow: column;
+     img {
+      width: 100%;
+    }
+    .process {
+      margin-left: 0;
+      h2 {
+        padding-top:25px ;
+      }
+    }
+  }
+
   /////////////////////////////
   //About Me ///// ///////////
   ///////////////////////////
@@ -149,6 +167,8 @@
     width: 100%;
   }
 
+  // Global Content Work Pages
+
   .weak, .opp {
     padding: 5px 0;
     ul {
@@ -163,5 +183,24 @@
   .opp {
     width: 100%;
     // float:left;
+  }
+
+  // Harry Potter
+  .hp-screenshots {
+
+    img {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+
+  // Graphic Design Content
+  .photos {
+    .row {
+      img {
+        width: 20%;
+        margin-right: 15px;
+      }
+    }
   }
 }

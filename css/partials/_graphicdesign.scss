@@ -1,0 +1,49 @@
+.emails, .product-photo, .web-banners, .print {
+  margin: 20px 0;
+}
+
+.emails, .print {
+  // width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+
+    height: 450px;
+    margin: 0 25px 20px 0;
+  }
+  img:nth-of-type(3){
+    margin-right: 0;
+  }
+}
+
+.photos {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+      width: 22%;
+      margin-right: 25px;
+    }
+    img:nth-of-type(4){
+      margin-right:0;
+    }
+  }
+}
+
+.banners {
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      width: 420px;
+      object-fit: contain;
+      margin: 0 25px 20px 0;
+    }
+  }
+
+}

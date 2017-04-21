@@ -27,13 +27,13 @@
     color: $shade;
   }
 }
-.gr:hover, .hp:hover, .sg:hover {
+.gr:hover, .hp:hover, .sg:hover, .lm-logo:hover, .gd:hover {
   .home-page-content {
     display: block;
   }
 }
 
-.gr, .hp, .sg {
+.gr, .hp, .sg, .lm-logo, .gd {
   background-position: center;
   object-fit: cover;
   transition: all .5s ease;
@@ -77,9 +77,33 @@
   background-position: 10% 75%;
 }
 
-.harry-potter {
-  background-color:$tint;
+.lm-logo {
+  background-image: url("../images/home-page-logo.jpg");
 }
+.lm-logo:hover {
+  background:
+  linear-gradient(
+    rgba(93,172,189,.7),
+    rgba(93,172,189,.7)
+  ),
+  url("../images/home-page-logo.jpg");
+  background-position: 10% 50%;
+}
+
+.gd {
+  background-image: url("../images/home-page-gd.jpg");
+}
+.gd:hover {
+  background:
+  linear-gradient(
+    rgba(93,172,189,.7),
+    rgba(93,172,189,.7)
+  ),
+  url("../images/home-page-gd.jpg");
+  background-position:90% 100%;
+}
+
+
 .goodreads {
   background-color:$accent;
 }

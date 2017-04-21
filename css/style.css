@@ -212,10 +212,10 @@ button:hover {
     margin-top: 0;
     color: #E0EBEB; }
 
-.gr:hover .home-page-content, .hp:hover .home-page-content, .sg:hover .home-page-content {
+.gr:hover .home-page-content, .hp:hover .home-page-content, .sg:hover .home-page-content, .lm-logo:hover .home-page-content, .gd:hover .home-page-content {
   display: block; }
 
-.gr, .hp, .sg {
+.gr, .hp, .sg, .lm-logo, .gd {
   background-position: center;
   object-fit: cover;
   transition: all .5s ease; }
@@ -240,8 +240,19 @@ button:hover {
   background: linear-gradient(rgba(93, 172, 189, 0.7), #5dacbd), url("../images/home-page-sg.jpg");
   background-position: 10% 75%; }
 
-.harry-potter {
-  background-color: #A7BCB9; }
+.lm-logo {
+  background-image: url("../images/home-page-logo.jpg"); }
+
+.lm-logo:hover {
+  background: linear-gradient(rgba(93, 172, 189, 0.7), rgba(93, 172, 189, 0.7)), url("../images/home-page-logo.jpg");
+  background-position: 10% 50%; }
+
+.gd {
+  background-image: url("../images/home-page-gd.jpg"); }
+
+.gd:hover {
+  background: linear-gradient(rgba(93, 172, 189, 0.7), rgba(93, 172, 189, 0.7)), url("../images/home-page-gd.jpg");
+  background-position: 90% 100%; }
 
 .goodreads {
   background-color: #FAC55B; }
@@ -355,6 +366,67 @@ button:hover {
   width: 30%;
   float: left; }
 
+.sketch-hp, .home-page-hp, .hp-screenshots {
+  max-width: 800px;
+  margin: 15px auto;
+  display: block; }
+
+.hp-screenshots img {
+  margin-bottom: 25px;
+  overflow: hidden;
+  float: left;
+  width: 48%;
+  box-sizing: border-box; }
+.hp-screenshots img:nth-of-type(1) {
+  margin-right: 4%; }
+
+.emails, .product-photo, .web-banners, .print {
+  margin: 20px 0; }
+
+.emails, .print {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .emails img, .print img {
+    height: 450px;
+    margin: 0 25px 20px 0; }
+  .emails img:nth-of-type(3), .print img:nth-of-type(3) {
+    margin-right: 0; }
+
+.photos .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+  .photos .row img {
+    width: 22%;
+    margin-right: 25px; }
+  .photos .row img:nth-of-type(4) {
+    margin-right: 0; }
+
+.banners .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .banners .row img {
+    width: 420px;
+    object-fit: contain;
+    margin: 0 25px 20px 0; }
+
+.logo-process {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center; }
+  .logo-process .process {
+    margin-left: 25px; }
+    .logo-process .process h2 {
+      padding: 0;
+      margin-top: 0; }
+
 .about-highlights {
   width: 90%;
   margin: 0 auto;
@@ -370,6 +442,8 @@ button:hover {
 
 .about-me h2 {
   padding-top: 25px; }
+.about-me p {
+  padding-bottom: 15px; }
 
 body {
   font-family: 'Crimson Text', serif;
@@ -535,6 +609,15 @@ footer {
   .sg-mobile {
     display: none; }
 
+  .logo-process {
+    flex-flow: column; }
+    .logo-process img {
+      width: 100%; }
+    .logo-process .process {
+      margin-left: 0; }
+      .logo-process .process h2 {
+        padding-top: 25px; }
+
   .about-highlights {
     flex-flow: column;
     width: 80%; }
@@ -555,6 +638,14 @@ footer {
     width: 100%; }
 
   .opp {
-    width: 100%; } }
+    width: 100%; }
+
+  .hp-screenshots img {
+    width: 100%;
+    margin: 15px 0; }
+
+  .photos .row img {
+    width: 20%;
+    margin-right: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
