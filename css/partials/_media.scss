@@ -61,7 +61,7 @@
       width: 80%;
       float: none;
       display: block;
-      margin: 1% auto;
+      margin: 3% auto;
       p {
         margin-bottom: 15px;
       }
@@ -80,7 +80,7 @@
         display: block;
         border:1px solid black;
         width: 80%;
-        margin: 1% auto;
+        margin: 3% auto;
       }
     }
     .mobile {
@@ -100,7 +100,7 @@
       img {
         width: 80%;
         float: none;
-        margin: 1% auto;
+        margin: 3% auto;
         display: block;
       }
     }
@@ -132,15 +132,20 @@
 
   .logo-process {
     flex-flow: column;
-     img {
-      width: 100%;
-    }
+    width: 100%;
+
     .process {
       margin-left: 0;
+      width: 100%;
       h2 {
         padding-top:25px ;
       }
     }
+  }
+  .logo-process-images{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
   }
 
   /////////////////////////////

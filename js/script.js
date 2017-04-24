@@ -5,7 +5,10 @@ $(document).ready(function(){
 
   $(document).scroll (function(){
     var scroll = $(this).scrollTop();
-    if (scroll >= navPos){
+
+    var hero = $('.hero');
+
+    if (scroll >= navPos || hero < 550){
       $('nav').addClass('fixed');
     } else {
       $('nav').removeClass('fixed');
@@ -18,7 +21,7 @@ $(window).resize(function(){
 });
 
 
-// Automated Scrolling
+// Automated Scrolling down to work
 $('a').click(function(){
   $('html, body').animate({
     scrollTop: $($(this).attr('href')).offset().top-100},500);

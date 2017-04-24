@@ -4,12 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  text-align: center;
+  text-align: left;
   .process {
     margin-left: 25px;
+    width: 65%;
     h2 {
       padding: 0;
       margin-top: 0;
     }
   }
+}
+
+.logo-process-images {
+  width: 35%;
 }
