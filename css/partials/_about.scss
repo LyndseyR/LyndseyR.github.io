@@ -1,16 +1,29 @@
 .about-highlights {
   width: 90%;
-  margin: 0 auto;
+  margin: 25px auto 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  hr {
-    margin-top: 15px;
-  }
+  // hr {
+  //   margin-top: 15px;
+  // }
   img {
-    width: 40%;
-    margin-right: 25px;
+    width: 33.333%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-right : 15px;
+  }
+  img:nth-of-type(3){
+    object-position: bottom center;
+  }
+}
+
+.tools {
+  text-align:center;
+  h2 {
+    padding: 0;
   }
 }
 

@@ -207,6 +207,7 @@ button a:hover {
 // Mobile Navigation
 
 .inside-mobile-nav {
+  z-index: 100;
   display: none;
   padding: 15px 40px;
   top:0;

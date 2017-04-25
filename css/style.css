@@ -127,6 +127,7 @@ button a:hover {
     color: #E0EBEB; }
 
 .inside-mobile-nav {
+  z-index: 100;
   display: none;
   padding: 15px 40px;
   top: 0; }
@@ -438,16 +439,24 @@ button a:hover {
 
 .about-highlights {
   width: 90%;
-  margin: 0 auto;
+  margin: 25px auto 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center; }
-  .about-highlights hr {
-    margin-top: 15px; }
   .about-highlights img {
-    width: 40%;
-    margin-right: 25px; }
+    width: 33.333%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 15px; }
+  .about-highlights img:nth-of-type(3) {
+    object-position: bottom center; }
+
+.tools {
+  text-align: center; }
+  .tools h2 {
+    padding: 0; }
 
 .about-me h2 {
   padding-top: 25px; }
@@ -637,12 +646,11 @@ footer {
     margin: 0 auto;
     display: block; }
 
-  .about-highlights {
-    flex-flow: column;
-    width: 80%; }
-    .about-highlights img {
-      width: 80%;
-      margin: 0; } }
+  .about-highlights img {
+    width: 100%;
+    margin: 0; }
+  .about-highlights img:nth-of-type(odd) {
+    display: none; } }
 @media (max-width: 500px) {
   .work {
     width: 100%; }
@@ -665,6 +673,15 @@ footer {
 
   .photos .row img {
     width: 20%;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+
+  .project-goal a {
+    line-height: 1; }
+
+  .horizontal-bar {
+    display: none; }
+
+  .email {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
