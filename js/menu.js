@@ -1,6 +1,6 @@
 // Hamburger Menu
 $(document).ready(function(){
   $('.hamburger').click(function(){
-    $('.hamburger-menu').slideToggle();
+    $('.hamburger-menu').slideToggle(500);
   });
 });
