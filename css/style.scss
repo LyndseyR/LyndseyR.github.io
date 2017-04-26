@@ -53,8 +53,15 @@ h6 {
 h1::selection, h2::selection, p::selection, em::selection, ul::selection, li::selection, a::selection, .name::selection {
   background-color: $accent;
 }
+h1::-moz-selection, h2::-moz-selection, p::-moz-selection, em::-moz-selection, ul::-moz-selection, li::-moz-selection, a::-moz-selection, .name::-moz-selection {
+  background-color: $accent;
+}
 
 img::selection {
+  background-color:$primary;
+}
+
+img::-moz-selection {
   background-color:$primary;
 }
 
