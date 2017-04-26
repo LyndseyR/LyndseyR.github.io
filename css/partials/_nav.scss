@@ -22,10 +22,10 @@
 // }
 
 
-button{
-border:none;
-background:transparent;
-a {
+// .button{
+// border:none;
+// background:transparent;
+.link {
   color: $shade;
   text-align: center;
   font-size: 11px;
@@ -46,9 +46,9 @@ a {
   text-decoration: none;
   transition: all .5s;
 }
-}
+// }
 
-button a:hover {
+.link:hover {
   background:$shade;
   color:#333;
 }
@@ -192,13 +192,12 @@ button a:hover {
     }
   }
 
-  button {
-    a{
-      border-color: $secondary;
-      color:$secondary;
-    }
+ .link {
+    border-color: $secondary;
+    color:$secondary;
   }
-  button a:hover {
+
+  .link:hover {
     background: $secondary;
     color:$shade;
   }
@@ -252,17 +251,19 @@ button a:hover {
 
 .hamburger {
   border:2px solid $secondary;
+  border-radius: 4px;
+  padding: 2px 4px;
   float: right;
   top: 10px;
   right:0;
   position:relative;
   color:$secondary;
-  outline:0;
   font-size: 20px;
 }
 .hamburger:hover {
   color:$shade;
   background:$secondary;
+  cursor: pointer;
 }
 .hamburger-menu {
   display:none;

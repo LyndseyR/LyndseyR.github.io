@@ -50,8 +50,12 @@ h6 {
   text-transform:uppercase;
 }
 
-h1::selection, h2::selection, p::selection, em::selection, ul::selection, li::selection {
+h1::selection, h2::selection, p::selection, em::selection, ul::selection, li::selection, a::selection, .name::selection {
   background-color: $accent;
+}
+
+img::selection {
+  background-color:$primary;
 }
 
 
