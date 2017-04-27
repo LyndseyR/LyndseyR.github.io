@@ -93,6 +93,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
   transition: all .5s;
 
   .logo-fixed {
@@ -115,6 +117,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -webkit-transition: all .5s;
+  -moz-transition:all .5s;
   transition: all .5s;
 
   ul {
@@ -122,7 +126,7 @@
     li {
       display: inline-block;
       padding:5px;
-      a{
+      a {
         color:#333;
       }
     }
@@ -132,8 +136,8 @@
 // Color of my name on left side nav is black
 .inside-nav {
   .logo-fixed {
-    a{
-      h2{
+    a {
+      h2 {
         color:#333;
       }
     }
@@ -234,11 +238,13 @@
   color:$secondary;
   font-size: 20px;
 }
+
 .hamburger:hover {
   color:$shade;
   background:$secondary;
   cursor: pointer;
 }
+
 .hamburger-menu {
   display:none;
   position: absolute;
