@@ -45,11 +45,13 @@
 //
 .hero-content {
   width: 55%;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  // flex-wrap: wrap;
   text-align: center;
   height: 100vh;
 

@@ -33,6 +33,7 @@
 
 .hero-content {
   width: 55%;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -522,8 +523,7 @@ img::-webkit-selection {
   display: inline-block;
   padding-bottom: 2px;
   overflow: hidden;
-  position: relative;
-  top: 10px; }
+  position: relative; }
 .mainbody-work a:after {
   content: '';
   position: absolute;
@@ -536,6 +536,8 @@ img::-webkit-selection {
 .mainbody-work a:hover:after {
   left: 0;
   background: #24527A; }
+.mainbody-work a:after .horizontal-bar {
+  background: transparent; }
 .mainbody-work img {
   max-width: 100%;
   border: 1px solid #333;
@@ -696,7 +698,8 @@ footer {
     line-height: 1; }
 
   .horizontal-bar {
-    display: none; }
+    display: none;
+    opacity: 0%; }
 
   .email {
     display: block; } }

@@ -82,7 +82,7 @@ img::-webkit-selection {
     padding-bottom: 2px;
     overflow:hidden;
     position:relative;
-    top: 10px;
+    // top: 10px;
   }
   a:after {
     content: '';
@@ -97,6 +97,10 @@ img::-webkit-selection {
   a:hover:after {
     left: 0;
     background: $secondary;
+  }
+
+  a:after .horizontal-bar {
+    background: transparent;
   }
 
   img {
