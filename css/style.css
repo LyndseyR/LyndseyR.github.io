@@ -268,12 +268,13 @@
 .goodreads {
   background-color: #FAC55B; }
 
+#multiple-devices, #logo {
+  border: none; }
+
 .mainbody-work {
   max-width: 920px;
   margin: 105px auto 0;
   padding: 10px; }
-  .mainbody-work h2 {
-    padding-top: 25px; }
   .mainbody-work hr {
     margin: 0; }
 
@@ -391,7 +392,7 @@
 .hp-screenshots img:nth-of-type(1) {
   margin-right: 4%; }
 
-.emails, .product-photo, .web-banners, .print {
+.emails, .about {
   margin: 20px 0; }
 
 .emails, .print {
@@ -417,13 +418,25 @@
     margin-right: 0; }
 
 .banners .row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  overflow: hidden; }
   .banners .row img {
-    width: 420px;
-    object-fit: contain;
-    margin: 0 25px 20px 0; }
+    width: 48%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    object-fit: contain; }
+  .banners .row img:nth-child(odd) {
+    float: left; }
+  .banners .row img:nth-child(even) {
+    float: right; }
+
+.print {
+  clear: both; }
+  .print img {
+    display: inline-block;
+    width: 40%;
+    object-fit: cover; }
+  .print img:nth-of-type(3) {
+    width: 75%; }
 
 .logo-process {
   width: 90%;
@@ -441,6 +454,8 @@
 
 .logo-process-images {
   width: 35%; }
+  .logo-process-images img:nth-of-type(2) {
+    min-width: 100%; }
 
 .about-highlights {
   width: 90%;
@@ -545,9 +560,6 @@ img::-webkit-selection {
   border: 1px solid #333;
   box-sizing: border-box; }
 
-#multiple-devices, #logo {
-  border: none; }
-
 footer {
   clear: both;
   background-color: #24527A;
@@ -606,13 +618,17 @@ footer {
   .mainbody-work {
     padding: 15px; }
 
+  .project-goal img {
+    max-width: 100%; }
+
   .mockups .mockup-content {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 3%; }
   .mockups img {
     width: 80%;
     float: none;
     display: block;
-    margin: 3% auto; }
+    margin: 5% auto; }
     .mockups img p {
       margin-bottom: 15px; }
 
@@ -662,7 +678,7 @@ footer {
         padding-top: 25px; }
 
   .logo-process-images {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: block; }
 
@@ -687,13 +703,38 @@ footer {
   .opp {
     width: 100%; }
 
+  .sketch-hp, .home-page-hp {
+    width: 80%; }
+
+  .hp-screenshots img:nth-of-type(1) {
+    margin-right: 10%; }
   .hp-screenshots img {
-    width: 100%;
-    margin: 15px 0; }
+    width: 80%;
+    display: block;
+    float: none;
+    margin: 15px auto; }
 
   .photos .row img {
-    width: 20%;
+    width: 40%;
     margin-right: 15px; }
+  .photos .row img:nth-child(odd) {
+    display: none; }
+
+  .banners .row img {
+    width: 80%;
+    margin-left: 10%; }
+  .banners .row img:nth-child(odd) {
+    float: none; }
+  .banners .row img:nth-child(even) {
+    float: none; }
+
+  .print img {
+    display: inline-block;
+    width: 80%;
+    object-fit: cover;
+    margin: 0 0 25px; }
+  .print img:nth-of-type(3) {
+    width: 80%; }
 
   .project-goal a {
     line-height: 1; }

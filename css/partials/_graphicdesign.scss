@@ -1,4 +1,4 @@
-.emails, .product-photo, .web-banners, .print {
+.emails, .about, {
   margin: 20px 0;
 }
 
@@ -36,14 +36,30 @@
 
 .banners {
   .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    overflow: hidden;
     img {
-      width: 420px;
+      width: 48%;
+      margin-bottom: 25px;
+      box-sizing: border-box;
       object-fit: contain;
-      margin: 0 25px 20px 0;
+    }
+    img:nth-child(odd) {
+      float: left;
+    }
+    img:nth-child(even){
+      float: right;
     }
   }
+}
 
+.print {
+  clear:both;
+  img{
+    display:inline-block;
+    width: 40%;
+    object-fit: cover;
+  }
+  img:nth-of-type(3){
+    width: 75%;
+  }
 }
