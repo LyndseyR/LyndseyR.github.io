@@ -34,7 +34,6 @@
 .hero-content {
   width: 55%;
   max-width: 920px;
-  border: 5px solid blue;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -55,7 +54,9 @@
   .hero-content .tagline {
     padding-top: 10px;
     margin-top: 5px;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    max-width: 920px;
+    margin: 0 auto; }
 
 .logo-hero, .logo-fixed {
   padding-left: 35px; }
