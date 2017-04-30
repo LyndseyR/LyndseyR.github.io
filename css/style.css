@@ -567,6 +567,8 @@ img::-webkit-selection {
   color: #333; }
 .mainbody-work .horizontal-bar:after {
   display: none; }
+.mainbody-work .inside-link:after {
+  display: none; }
 
 footer {
   clear: both;
