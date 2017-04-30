@@ -118,6 +118,9 @@ img::-webkit-selection {
   .horizontal-bar:after {
     display: none;
   }
+  .inside-link {
+    text-decoration: underline;
+  }
   .inside-link:after{
     display:none;
   }
