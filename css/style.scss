@@ -82,7 +82,7 @@ img::-webkit-selection {
     padding-bottom: 2px;
     overflow:hidden;
     position:relative;
-    // top: 10px;
+    top: 10px;
   }
   a:after {
     content: '';
@@ -107,6 +107,16 @@ img::-webkit-selection {
     max-width: 100%;
     border: 1px solid #333;
     box-sizing: border-box;
+  }
+}
+
+// Fix for positioning of | to look right on 
+.mainbody-work {
+  .horizontal-bar {
+    color: #333;
+  }
+  .horizontal-bar:after {
+    display: none;
   }
 }
 

@@ -540,7 +540,8 @@ img::-webkit-selection {
   display: inline-block;
   padding-bottom: 2px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  top: 10px; }
 .mainbody-work a:after {
   content: '';
   position: absolute;
@@ -559,6 +560,11 @@ img::-webkit-selection {
   max-width: 100%;
   border: 1px solid #333;
   box-sizing: border-box; }
+
+.mainbody-work .horizontal-bar {
+  color: #333; }
+.mainbody-work .horizontal-bar:after {
+  display: none; }
 
 footer {
   clear: both;
