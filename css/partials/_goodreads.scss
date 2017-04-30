@@ -9,10 +9,13 @@
   .mockup-content, img {
     width: 46%;
     float: left;
-    margin: 1% 2%;
+    margin: 2%;
     p {
       margin-bottom: 0;
     }
+  }
+  img:nth-of-type(1){
+    margin-bottom: 7%;
   }
 }
 

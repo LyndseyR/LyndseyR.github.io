@@ -320,9 +320,11 @@
   .mockups .mockup-content, .mockups img {
     width: 46%;
     float: left;
-    margin: 1% 2%; }
+    margin: 2%; }
     .mockups .mockup-content p, .mockups img p {
       margin-bottom: 0; }
+  .mockups img:nth-of-type(1) {
+    margin-bottom: 7%; }
 
 .final img {
   object-fit: cover;
