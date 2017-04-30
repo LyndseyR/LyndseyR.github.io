@@ -173,8 +173,20 @@
 @media (max-width:500px) {
 
   /////////////////////////////
-  //Home Page Work Containers/
+  //Home Page ////////////////
   ///////////////////////////
+
+  // Hero Section
+
+  .hero {
+    height: 70vh;
+  }
+  
+  .hero-content {
+    height: 70vh;
+  }
+
+// Home Page Work Containers
 
   .work {
     width: 100%;

@@ -700,6 +700,12 @@ footer {
   .about-highlights img:nth-of-type(odd) {
     display: none; } }
 @media (max-width: 500px) {
+  .hero {
+    height: 70vh; }
+
+  .hero-content {
+    height: 70vh; }
+
   .work {
     width: 100%; }
 
