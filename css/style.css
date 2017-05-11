@@ -701,10 +701,10 @@ footer {
     display: none; } }
 @media (max-width: 500px) {
   .hero {
-    height: 70vh; }
+    height: 65vh; }
 
   .hero-content {
-    height: 70vh; }
+    height: 65vh; }
 
   .work {
     width: 100%; }
