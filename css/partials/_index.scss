@@ -32,13 +32,13 @@
     line-height: 1.2;
   }
 }
-.gr:hover, .hp:hover, .sg:hover, .lm-logo:hover, .gd:hover {
+.gr:hover, .hp:hover, .sg:hover, .lm-logo:hover, .gd:hover, .tt:hover {
   .home-page-content {
     display: block;
   }
 }
 
-.gr, .hp, .sg, .lm-logo, .gd {
+.gr, .hp, .sg, .lm-logo, .gd, .tt {
   background-position: center;
   object-fit: cover;
   transition: all .5s ease;
@@ -93,6 +93,19 @@
   ),
   url("../images/home-page-logo.jpg");
   background-position: 10% 50%;
+}
+
+.tt {
+  background-image: url("../images/home-page-tt.jpg");
+}
+.tt:hover {
+  background:
+  linear-gradient(
+    rgba(232,135,35,1),
+    rgba(232,135,35,.7)
+  ),
+  url("../images/home-page-tt.jpg");
+  background-position: 90% 50%;
 }
 
 .gd {

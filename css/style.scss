@@ -6,6 +6,7 @@
 @import "partials/savinggrace";
 @import "partials/harrypotter";
 @import "partials/graphicdesign";
+@import "partials/teachertalk";
 @import "partials/logo";
 @import "partials/about";
 
@@ -44,19 +45,20 @@ h4 {
 
 h5 {
   text-transform:uppercase;
+  margin: 0;
 }
 
 h6 {
   text-transform:uppercase;
 }
 
-h1::selection, h2::selection, p::selection, em::selection, ul::selection, li::selection, a::selection, .name::selection {
+h1::selection, h2::selection, h5::selection, p::selection, em::selection, ul::selection, li::selection, a::selection, .name::selection {
   background-color: $accent;
 }
-h1::-moz-selection, h2::-moz-selection, p::-moz-selection, em::-moz-selection, ul::-moz-selection, li::-moz-selection, a::-moz-selection, .name::-moz-selection {
+h1::-moz-selection, h2::-moz-selection, h5::-moz-selection, p::-moz-selection, em::-moz-selection, ul::-moz-selection, li::-moz-selection, a::-moz-selection, .name::-moz-selection {
   background-color: $accent;
 }
-h1::-webkit-selection, h2::-webkit-selection, p::-webkit-selection, em::-webkit-selection, ul::-webkit-selection, li::-webkit-selection, a::-webkit-selection, .name::-webkit-selection {
+h1::-webkit-selection, h2::-webkit-selection, h5::-webkit-selection, p::-webkit-selection, em::-webkit-selection, ul::-webkit-selection, li::-webkit-selection, a::-webkit-selection, .name::-webkit-selection {
   background-color: $accent;
 }
 
