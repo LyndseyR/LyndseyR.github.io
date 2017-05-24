@@ -462,7 +462,7 @@
   .logo-images img:nth-of-type(2) {
     width: 30%;
     float: left;
-    margin-right: 3%; }
+    margin-left: 3%; }
 
 .tt-images {
   display: flex;
