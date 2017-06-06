@@ -264,12 +264,12 @@
   .print {
     img{
       display:inline-block;
-      width: 80%;
+      width: 100%;
       object-fit: cover;
       margin:0 0 25px;
     }
     img:nth-of-type(3){
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -286,6 +286,11 @@
   }
 
   .email {
+    display: block;
+  }
+
+  // Footer
+  .break {
     display: block;
   }
 }
