@@ -173,7 +173,7 @@
   color: #24527A;
   font-size: 20px; }
 
-.hamburger:hover {
+.hamburger:hover, .hamburger:focus {
   color: #E0EBEB;
   background: #24527A;
   cursor: pointer; }
