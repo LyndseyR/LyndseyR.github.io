@@ -1,32 +1,62 @@
-//Bourbon Tool Kit Library
+#multiple-devices, #logo {
+  border:none;
+}
 
+.mainbody-work {
+  max-width: 920px;
+  margin: 105px auto 0;
+  padding: 10px;
 
-//Base
-@import "partials/base/variables";
-@import "partials/base/global";
+  .margin {
+    margin-top: 15px;
+  }
+  hr {
+    margin: 0;
+  }
+}
 
-//Components
-@import "partials/components/nav";
-@import "partials/components/global-work";
-@import "partials/components/logo";
+.project-goal {
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0;
+    line-height: 1;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  img {
+    max-width: 70%;
+  }
+}
 
-//Pages
-@import "partials/pages/index";
-@import "partials/pages/goodreads";
-@import "partials/pages/savinggrace";
-@import "partials/pages/harrypotter";
-@import "partials/pages/graphicdesign";
-@import "partials/pages/teachertalk";
-@import "partials/pages/about";
+.tools, .about, .weak, .opp {
+  box-sizing: border-box;
+  padding: 10px;
+  p {
+    margin: 5px 0;
+  }
+  ul {
+    margin: 10px 0;
+  }
+}
 
-//Trumps
-@import "partials/trumps/media";
+.about {
+  overflow: hidden;
+}
+.weak{
+  width: 50%;
+  float: left;
+}
+.opp {
+  width: 50%;
+  float:left;
+}
 
-
-
-
-
-
+.redesign-goal {
+  clear:both;
+}
 
 .mainbody-work {
 
